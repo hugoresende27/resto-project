@@ -10,6 +10,10 @@
     <input type="email" v-model="email"  placeholder="Enter Email"/>
     <input type="password"  v-model="password"  placeholder="Enter Password"/>
     <button v-on:click="signUp">Sign Up</button>
+
+    <p>
+      <router-link to="/login">Go to Login</router-link>
+    </p>
   </div>
 
 </template>
@@ -46,12 +50,26 @@ import axios from 'axios'
 
         if (result.status === 201)
         {
-          alert ("sign-up done");
+          // alert ("sign-up done");
+
+          //save user-info in localStorage
           localStorage.setItem("user-info", JSON.stringify(result.data))
 
           this.$router.push({name:'Home'})
         }
       }
+    },
+
+    //if user-info in localStorage redirect to Home
+    mounted()
+    {
+      let user = localStorage.getItem("user-info");
+
+      if (user)
+      {
+        this.$router.push({name:'Home'})
+      }
+
     }
 
   }
@@ -61,33 +79,7 @@ import axios from 'axios'
 
 <style>
 
-.logo{
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
 
-.register input{
-  width: 300px;
-  height: 40px;
-  padding-left: 20px;
-  display: block;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid darkblue;
-  border-radius: 10px;
-}
-
-.register button {
-  width: 320px;
-  height: 40px;
-  border: 1px solid darkblue;
-  background-color: darkblue;
-  color: white;
-  cursor: pointer;
-  border-radius: 10px;
-}
 
 
 

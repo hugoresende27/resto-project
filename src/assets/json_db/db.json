@@ -2,33 +2,37 @@
   "users": [
     {
       "name": "hugo",
-      "email": "hugo@hugo",
-      "password": "9999",
+      "email": "h@h",
+      "password": "1234",
       "id": 1
     },
     {
       "name": "zecas",
-      "email": "zecas@hugo",
-      "password": "9999",
+      "email": "zeee",
+      "password": "1234",
       "id": 2
+    }
+  ],
+
+
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Burger King",
+      "contact" : 111111,
+      "address": "Porto"
     },
     {
-      "name": "teste",
-      "email": "teste",
-      "password": "teste",
-      "id": 3
+      "id": 2,
+      "name": "daTerra",
+      "contact" : 2222222,
+      "address": "Aveiro"
     },
     {
-      "name": "333",
-      "email": "333",
-      "password": "333",
-      "id": 4
-    },
-    {
-      "name": "aaaaaaaa",
-      "email": "aaaaaaaa",
-      "password": "aaaaaaaaaaaa",
-      "id": 5
+      "id": 3,
+      "name": "Pizza Hut",
+      "contact" : 3333333,
+      "address": "Coimbra"
     }
   ]
 }

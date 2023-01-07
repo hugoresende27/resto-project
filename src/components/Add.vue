@@ -2,7 +2,7 @@
 
   <Header/>
 
-  <h1>Hello {{ name }}, welcome to Home Page</h1>
+  <h1>Hello {{name}}, welcome to Add Restaurant Page</h1>
 
 </template>
 
@@ -11,7 +11,7 @@
 
 import Header from "@/components/Header.vue";
   export default {
-    name : 'Home-main',
+    name : 'Add-main',
 
     data(){
       return {
@@ -27,8 +27,8 @@ import Header from "@/components/Header.vue";
     mounted()
     {
       let user = localStorage.getItem("user-info");
-
       this.name = JSON.parse(user).name;
+      console.log(this.name)
 
       if (!user)
       {
