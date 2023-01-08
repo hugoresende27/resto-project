@@ -13,26 +13,60 @@
       "id": 2
     }
   ],
-
-
   "restaurant": [
     {
       "id": 1,
       "name": "Burger King",
-      "contact" : 111111,
+      "contact": 111111,
       "address": "Porto"
     },
     {
       "id": 2,
       "name": "daTerra",
-      "contact" : 2222222,
+      "contact": 2222222,
       "address": "Aveiro"
     },
     {
       "id": 3,
       "name": "Pizza Hut",
-      "contact" : 3333333,
+      "contact": 3333333,
       "address": "Coimbra"
+    },
+    {
+      "name": "Vegan XXL",
+      "address": "Figueira da Foz",
+      "contact": "4444",
+      "id": 4
+    },
+    {
+      "name": "Vegan XXL",
+      "address": "Figueira da Foz",
+      "contact": "4444",
+      "id": 5
+    },
+    {
+      "name": "d",
+      "address": "d",
+      "contact": "d",
+      "id": 6
+    },
+    {
+      "name": "StarBucks",
+      "address": "Lisboa",
+      "contact": "1231314",
+      "id": 7
+    },
+    {
+      "name": "ffff",
+      "address": "ffff",
+      "contact": "fffff",
+      "id": 8
+    },
+    {
+      "name": "Sector99",
+      "address": "Leixoes",
+      "contact": "1231414",
+      "id": 9
     }
   ]
 }
